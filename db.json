@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "CandidateId":10001,
+     "CandidateName":"NikhilKatrar",
+     "RequirementId":	1001,
+     " CandidateName":"Ui With Angular",
+     "ClientName":"simeo",
+     "Recruiter":"prasannar",
+     "SubmissionDate":"11-10-2019",
+     "LastUpdatedDate":"11-10-2019",
+     "CandidateStatus":"Raise Invoice",
+     "typeofHiring":"permanent",
+     "CTC":5000000
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,111 @@
+<ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <h3>
+                <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;On Boarded List
+            </h3>
+        </li>
+
+    </ol>
+    <div class="row">
+			<div class="col-md-4 mb-4">
+				<div class="row">
+					<div class="col-sm-6">
+						Search By Category <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="searchcategory" style="border-radius: 0">
+							<option value="" selected="">--Select --</option>
+							<option value="clientName">Client Name</option>
+							<option value="candidateName">Candidate Name</option>
+							<option value="candidateStatus">Candidate Status</option>
+							<option value="nameOfTheReq">Requirement Name</option>
+							<option value="nameOftheRecruiter">Recruiter Name</option>
+						</select>
+					</div>
+					<div class="col-sm-6 ">
+						<input class="form-control ng-pristine ng-untouched ng-valid" type="search" ng-model="searchtext" placeholder="Search Here.." style="margin-top: 21px; border-radius: 0">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="row">
+					<div class="col-sm-4">
+						Sort By <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="order" style="border-radius: 0">
+							<option value="" selected="">--Select --</option>
+							<option value="clientName">Client Name</option>
+							<option value="candidateName">Candidate Name</option>
+							<option value="candidateStatus">Candidate Status</option>
+							<option value="nameOfTheReq">Requirement Name</option>
+							<option value="nameOftheRecruiter">Recruiter Name</option>
+						</select>
+					</div>
+					<div class="col-sm-4">
+						
+						Order By <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="by" style="border-radius: 0">
+							<option value="" selected="">--Select --</option>
+							<option value="asc">Ascending</option>
+							<option value="desc">Descending</option>
+						</select>
+					</div>
+					<div class="col-sm-2 mt-4 pt-2">
+						<button class="btn btn-primary btn-sm" ng-click="searchText()">Search</button>
+					</div>
+					<div class="col-sm-2 mt-4 pt-2">
+						<button class="btn btn-danger btn-sm" ng-click="clearText()">Reset</button>
+					</div>
+				</div>
+
+
+			</div>
+	
+
+			<div class="col-md-4 mt-4 pt-2">
+
+				<select class="form-control pull-right ng-pristine ng-untouched ng-valid" ng-model="pageSize" style="width: 65px; margin-bottom: 6px;">
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="25">25</option>
+				</select> <span style="margin-right: 8px; margin-top: 6px;" class="pull-right text text-info ng-binding">Items per
+					page1</span>
+			</div>
+
+		</div>
+            <div class="row mt-1">
+                <div class="col-sm-12">
+<table class="table">
+    <tr>
+        <th>Candidate Id</th>
+        <th>Candidate Name</th>
+        <th>Requirement Id</th>
+        <th>Candidate Name</th>
+        <th>Client Name</th>
+        <th>Recruiter </th>
+        <th>Submission Date</th>
+        <th>Last Updated Date</th>
+        <th>Candidate Status</th>
+        <th>typeofHiring</th>
+        <th>CTC</th>
+      
+    </tr>
+    <tr *ngFor="let i of result" >
+            <td>{{i.CandidateId}}</td>
+            <td>{{i.CandidateName}}</td>
+            <td>{{i.RequirementId}}</td>
+            <td>{{i.CandidateName}}</td>
+            <td>{{i.ClientName}}</td>
+            <td>{{i.Recruiter}} </td>
+            <td>{{i.SubmissionDate}}</td>
+            <td>{{i.LastUpdatedDate}}</td>
+            <td>{{i.CandidateStatus}}</td>
+            <td>{{i.typeofHiring}}</td>
+            <td>{{i.CTC}}   </td>
+          
+    </tr>
+</table>
+                </div>
+            </div>
+               
+                          
+                                
+                                
+                                
+             
